@@ -7,12 +7,13 @@ import my.gui.controller.Controller;
 public class Frame extends JFrame
 {
 	private Controller theController;
+	private Panel thePanel;
 	
 	public Frame(Controller theController)
 	{
 		super();
 		this.theController = theController;
-		
+		this.thePanel = new Panel(theController);
 		setupFrame();
 	}
 	
